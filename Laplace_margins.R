@@ -1,6 +1,7 @@
 #################################################################################
 ### Function to transform data to Laplace margins:
   library(texmex)
+  library(ismev)
 
   laplaceMargins <- function(univariateData, thrQ=0.95){
       
