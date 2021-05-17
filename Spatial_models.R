@@ -473,20 +473,21 @@ fit=inla(myform,
   pit = fit$cpo$pit
   cpo = fit$cpo$cpo
 
+
 ### Save results ###
   if(model.num == 0){
-    save(model.num, hyper, fitted, summ, spatial, spline, obs, mesh, cpo, pit, file = paste0("AllSpatialModels-", ifelse(valid, "valid-", ""), "OUTPUT", model.num, "-alpha", alpha,  ".RData"))
+    save(model.num, hyper, fitted, summ, spatial, spline, obs, mesh, cpo, pit, file = paste0("AllSpatialModels-", "OUTPUT", model.num, "-alpha", alpha,  ".RData"))
   }else if(model.num==1){
-    save(model.num, hyper, fitted, summ, spatial, spline, obs, mesh, mesh.dist, cpo, pit, file = paste0("AllSpatialModels-", ifelse(valid, "valid-", ""), "OUTPUT", model.num,  "-alpha", alpha,  ".RData"))
+    save(model.num, hyper, fitted, summ, spatial, spline, obs, mesh, mesh.dist, cpo, pit, file = paste0("AllSpatialModels-", "OUTPUT", model.num,  "-alpha", alpha,  ".RData"))
   }else if(model.num==2){
-    save(model.num, hyper, fitted, summ, spatial, spline, spline2, obs, mesh, mesh.dist2, cpo, pit, file = paste0("AllSpatialModels-", ifelse(valid, "valid-", ""), "OUTPUT", model.num,  "-alpha", alpha,  ".RData"))
+    save(model.num, hyper, fitted, summ, spatial, spline, spline2, obs, mesh, mesh.dist2, cpo, pit, file = paste0("AllSpatialModels-", "OUTPUT", model.num,  "-alpha", alpha,  ".RData"))
   }else if(model.num==3){
-    save(model.num, hyper, fitted, summ, spatial, spline, spline2, obs, mesh, mesh.dist, mesh.dist2, cpo, pit, file = paste0("AllSpatialModels-", ifelse(valid, "valid-", ""), "OUTPUT", model.num,  "-alpha", alpha, ".RData"))
+    save(model.num, hyper, fitted, summ, spatial, spline, spline2, obs, mesh, mesh.dist, mesh.dist2, cpo, pit, file = paste0("AllSpatialModels-", "OUTPUT", model.num,  "-alpha", alpha, ".RData"))
   }else if(model.num==4){
-    save(model.num, hyper, fitted, summ, spatial, spline, spline2, obs, mesh, mesh.dist, mesh.dist2, cpo, pit, file = paste0("AllSpatialModels-", ifelse(valid, "valid-", ""), "OUTPUT", model.num, "-alpha", alpha,".RData"))
+    save(model.num, hyper, fitted, summ, spatial, spline, spline2, obs, mesh, mesh.dist, mesh.dist2, cpo, pit, file = paste0("AllSpatialModels-", "OUTPUT", model.num, "-alpha", alpha,".RData"))
   }else if(model.num==5){
-    save(model.num, hyper, fitted, summ, spatial, spline, obs, mesh, mesh.dist, cpo, pit, file = paste0("AllSpatialModels-", ifelse(valid, "valid-", ""), "OUTPUT", model.num, "-alpha", alpha,".RData"))
+    save(model.num, hyper, fitted, summ, spatial, spline, obs, mesh, mesh.dist, cpo, pit, file = paste0("AllSpatialModels-", "OUTPUT", model.num, "-alpha", alpha,".RData"))
   }else if(model.num==6){
-    save(model.num, hyper, fitted, summ, spline, spline2, obs,  mesh.dist, mesh.dist, cpo, pit, file = paste0("AllSpatialModels-", ifelse(valid, "valid-", ""), "OUTPUT", model.num, "-alpha", alpha, ".RData"))
+    save(model.num, hyper, fitted, summ, spline, spline2, obs,  mesh.dist, mesh.dist, cpo, pit, file = paste0("AllSpatialModels-", "OUTPUT", model.num, "-alpha", alpha, ".RData"))
   }
 ##########################################################################################
